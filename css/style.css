@@ -1,45 +1,19 @@
+/* General settings */
+
 html, body{
-    background-color: rgb(253, 244, 255);
+    background-color: #fcc9e8;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-header{
-    background-color: #831759;
-    padding: 40px;
-    text-align: center;
-}
-
 h1{
-    font-size: 90px;
+    font-size: 50px;
     text-shadow: 0 4px 20px black;
     color: rgb(253, 244, 255);
 }
 
-header img{
-    border-radius: 100px;
-    width: 250px;
-    border: 25px solid #ff88ab;
-    box-shadow: 0 10px 20px black;;
-}
-
-.content{
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-img.big-image{
-    max-width: 100%;
-}
-
-p.caption{
-    font-size: 16px;
-    color: rgb(126, 126, 126);
-    font-style: italic;
-}
-
 ul{
-    list-style: none;
+    list-style: disc;
     padding: 0;
     margin: 0;
 }
@@ -49,11 +23,40 @@ a{
     text-decoration: none;
 }
 
+/* HEADER */
+
+header{
+    background-color: #831759;
+    padding: 40px;
+    text-align: center;
+}
+
+header a{
+    color: #ffc7e9ee;
+}
+
+header ul li{
+    font-weight:bold;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header img{
+    border-radius: 100px;
+    width: 150px;
+    border: 25px solid #ff88acc4;
+    box-shadow: 0 10px 20px black;
+}
+
+/* FOOTER */
+
 footer{
     font-size: 12px;
     margin-top: 20px;
     padding: 40px 20px;
-    background-color: rgb(204, 235, 255);
+    background-color: rgb(255, 255, 255);
+    font-style: italic;
 }
 
 footer ul{
@@ -63,4 +66,59 @@ footer ul{
 footer ul li{
     display: inline-block;
     margin: 0 5px;
+}
+
+/* Classes */
+
+div.content{
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: justify;
+}
+
+div.cancer{
+    text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.308);
+    overflow: auto;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url('../img/leaves.gif');
+    background-size: 80px;
+}
+
+p.caption{
+    font-size: 11px;
+    color: rgb(126, 126, 126);
+    font-style: italic;
+}
+
+/* Image classes */
+
+img.big-image{
+    max-width: 100%;
+}
+
+img.portfolio{
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 10px 20px black;
+    padding: 2px;
+    margin: 10px;
+}
+
+img.weirdo{
+    border-radius: 100px;
+    width: 40%;
+    border: 25px solid #00000056;
+    box-shadow: 0 10px 20px black;
+}
+
+img.icon{
+    width: 25px;
+    padding: 5px;
 }
